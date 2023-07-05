@@ -5,9 +5,6 @@ void contrlMatrix::startMatrix()
     int sizeMatrix;
     int val = 9;
 
-    modMat.initMatrix();
-    sizeMatrix = std::size(modMat.matrix);
-
     for (int i = 0; i < 10; i++)
     {
         if (i > 0)
@@ -40,9 +37,9 @@ void contrlMatrix::outMatrix()
 
     std::cout << "number of occupied cells: " << coutN << std::endl;
 
-    for (int i = 1; i < modMat.N; i++)
+    for (int i = 1; i < 10; i++)
     {
-        for (int j = 1; j < modMat.N; j++)
+        for (int j = 1; j < 10; j++)
         {
             if (modMat.matrix[i][j] > 0)
             {

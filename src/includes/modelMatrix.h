@@ -1,13 +1,12 @@
 #pragma once
 #include <iostream>
+#include <map>
 
 class modelMatrix
 {
 
 public:
-    static const int N = 10;
-    int matrix[N][N];
-    void initMatrix();
+    std::map<int, std::map<int, int>> matrix;
     modelMatrix();
     ~modelMatrix();
 };
